@@ -31,6 +31,14 @@ npm run build
 npm run preview
 ```
 
+### Netlify Deployment
+
+Netlify builds from the repository root with `npm run build` and publishes `dist`.
+The application source in `src/` and static assets in `public/` must be included
+in the repository. `FoodBridge.zip` is only an archive; the build does not unpack
+it. Keep `tsconfig.app.json` pointed at `src`, which contains the entry point
+referenced by `index.html`.
+
 ---
 
 ## 🔑 Demo Login Credentials & Accounts
